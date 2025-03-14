@@ -24,7 +24,7 @@ const displayCategories = (categories) => {
         // 3.create element
         const categoryDiv = document.createElement("div");
         categoryDiv.innerHTML = `
-        <button class="btn btn-sm hover:bg-[#FF1F3D] hover:text-white">${cat.category}</button>
+        <button onclick="loadCategoryVideos(${cat.category_id})" class="btn btn-sm hover:bg-[#FF1F3D] hover:text-white">${cat.category}</button>
         `;
         // 4.appended the element
         categoryContainer.append(categoryDiv);
